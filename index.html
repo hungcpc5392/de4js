@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html class='v2' dir='ltr' lang='vi' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+    <head>
+        <title>Code Pro Decode</title>
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<link href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmuMxdWhHDT6i9S-D17759bi062ixAuUM5C9Fxcsq0WfwvwMUYSIS0of3uxUZb1t1U_Q4VOCzjX1zrg2G5XQhPi_BkCPakaUORMGlOu7QJ-JFzW30YNHAyXc2GGb3Hrsktsk5OUclpKUIh/s16000/favicon-152x152.png' rel='shortcut icon' type='image/x-icon'/>
+<meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWt9KHQBrw4cEBWNbkFRZcTW8ZAcQGQ6WHbH51kyTyusTH2WipG9IAMomHaj1jeQZ3xS7khJezUlkolDTKUQ8WQJEPpQ5a7jbBFTasV4jK9R7DPf2d4yj8G5aCA-uqNGgLC-QgQIjTAKj8/s16000/code-pro-vn-tu-duy-lap-trinh.jpeg' property='og:image'/>
+<meta content='https://decode.code.pro.vn/' property='og:url'/>
+<meta content='code pro decode, decode javascript, decode js, giải mã code, decode online, giải mã code online, how to decode, unpacker online, javascript deobfuscator, javascript decode' name='keywords'/>
+<meta content='website' property='og:type'/>
+<meta content='Code Pro Decode' property='og:title'/>
+<meta content='Xây dựng và phát triển bởi Lê Anh Đức !' property='og:description'/>
+<link href='//cdn.leanhduc.pro.vn/blogger/decode/css/style.css' rel='stylesheet'/>
+<!-- auto adsense -->
+<script>
+            //<![CDATA[
+            var url = window.location.href
+            var uri = window.location.toString()
+            var fb1 = url.substring(0, url.indexOf('?fbclid'))
+            var fb2 = url.substring(0, url.indexOf('&fbclid'))
+            var gi1 = url.substring(0, url.indexOf("?gidzl"))
+            var gi2 = url.substring(0, url.indexOf("&gidzl"))
+            var m1 = url.substring(0, url.indexOf('?m=1'))
+            var m2 = url.substring(0, url.indexOf('&m=1'))
+            if ((uri.length - fb1.length) > 0) window.history.replaceState({}, document.title, fb1)
+            if ((uri.length - fb2.length) > 0) window.history.replaceState({}, document.title, fb2)
+            if ((uri.length - gi1.length) > 0) window.history.replaceState({}, document.title, gi1)
+            if ((uri.length - gi2.length) > 0) window.history.replaceState({}, document.title, gi2)
+            if ((uri.length - m1.length) > 0) window.history.replaceState({}, document.title, m1)
+            if ((uri.length - m2.length) > 0) window.history.replaceState({}, document.title, m2)
+            //]]>
+        </script>
+<style id='page-skin-1' type='text/css'><!--
+/*----------------------------------------------*/
+/* Name: Template Code Pro Decode               */
+/* Admin: Lê Anh Đức                            */
+/* Phone: 0386 897 757                          */
+/* Gmail: leanhduc.pro.vn@gmail.com             */
+/* Website: https://code.pro.vn                 */
+/*----------------------------------------------*/
+
+--></style>
+    </head>
+    <body>
+        <!-- phần hiển thị -->
+<header>
+<div class='container'>
+<h1 class='center'>JavaScript Deobfuscator and Unpacker</h1>
+</div>
+</header>
+<div class='container'>
+<section id='main_content'>
+<!-- Code Pro - Quảng cáo hiển thị hình ảnh (thích ứng) -->
+<ins class='adsbygoogle' data-ad-client='ca-pub-2510117447486207' data-ad-format='auto' data-ad-slot='8940879699' data-full-width-responsive='true' style='display:block'></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<div class='tabs'>
+<div class='tab active' data-target='String'>String</div>
+</div>
+</section>
+<main class='page-body'>
+<form class='wrap' name='bvDecode'>
+<textarea class='content' id='input' placeholder='Paste code here...' rows='10'>
+</textarea>
+<textarea id='output' style='display:none'>
+</textarea>
+<div class='config center'>
+<input class='magic-radio' id='none' name='encode' type='radio' value=''/>
+<label for='none'>None</label>
+<input class='magic-radio' id='evalencode' name='encode' type='radio' value='evalencode'/>
+<label for='evalencode'>Eval</label>
+<input class='magic-radio' id='arrayencode' name='encode' type='radio' value='arrayencode'/>
+<label for='arrayencode'>Array</label>
+<input class='magic-radio' id='_numberencode' name='encode' type='radio' value='_numberencode'/>
+<label for='_numberencode'>_Number</label>
+<input class='magic-radio' id='jsfuck' name='encode' type='radio' value='jsfuck'/>
+<label for='jsfuck'>JSFuck</label>
+<input class='magic-radio' id='jjencode' name='encode' type='radio' value='jjencode'/>
+<label for='jjencode'>JJencode</label>
+<input class='magic-radio' id='aaencode' name='encode' type='radio' value='aaencode'/>
+<label for='aaencode'>AAencode</label>
+<input class='magic-radio' id='urlencode' name='encode' type='radio' value='urlencode'/>
+<label for='urlencode'>URLencode</label>
+<input class='magic-radio' id='p_a_c_k_e_r' name='encode' type='radio' value='p_a_c_k_e_r'/>
+<label for='p_a_c_k_e_r'>Packer</label>
+<input class='magic-radio' id='javascriptobfuscator' name='encode' type='radio' value='javascriptobfuscator'/>
+<label for='javascriptobfuscator'>Javascript Obfuscator</label>
+<input class='magic-radio' id='myobfuscate' name='encode' type='radio' value='myobfuscate'/>
+<label for='myobfuscate'>My Obfuscate</label>
+<input class='magic-radio' id='nicify' name='encode' type='radio' value='nicify'/>
+<label for='nicify'>Unreadable</label>
+</div>
+<div class='config center'>
+<input checked='true' class='magic-checkbox' id='beautify' name='beautify' type='checkbox'/>
+<label for='beautify'>Beautify</label>
+<input class='magic-checkbox' id='auto' name='auto' type='checkbox'/>
+<label for='auto'>Auto</label>
+</div>
+<div class='center'>
+<button class='btn' id='redecode' type='button'>Continue decoding</button>
+<button class='btn' id='clear' type='reset'>Clear</button>
+</div>
+<!-- Code Pro - Quảng cáo hiển thị hình ảnh (thích ứng) -->
+<ins class='adsbygoogle' data-ad-client='ca-pub-2510117447486207' data-ad-format='auto' data-ad-slot='8940879699' data-full-width-responsive='true' style='display:block'></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<div class='view-wrap'>
+<div class='view-control'>
+<button class='btn' id='copyjs' type='button'>
+<img alt='Copy to clipboard' class='btn-icon' src='https://cdn.leanhduc.pro.vn/blogger/decode/img/copy-document.png'/>
+</button>
+<a class='btn' href='#' id='preview' target='_blank' type='button'>
+<img alt='Open in new tab' class='btn-icon' src='https://cdn.leanhduc.pro.vn/blogger/decode/img/external-link-symbol.png'/>
+</a>
+</div>
+<pre class='hljs' id='view'>Please choose a right encoding type!</pre>
+</div>
+</form>
+</main>
+</div>
+<br/><hr/>
+<div class='center'>
+            Copyright &#169; <span id='getYear'></span> &#8231; <a href='https://www.code.pro.vn/' id='copyright' style='text-decoration:none' target='blank' title='code pro'>Code Pro</a> &#8231; All rights reserved.
+        </div>
+<!-- kết thúc phần hiển thị -->
+<script src='//cdn.leanhduc.pro.vn/blogger/decode/js/clipboard.min.js'></script>
+<script src='//cdn.leanhduc.pro.vn/blogger/decode/js/main.js'></script>
+<script type='text/javascript'>
+            //<![CDATA[
+            var d = new Date();
+            var n = d.getFullYear();
+            document.getElementById('getYear').innerHTML = n;
+            //]]>
+        </script>
+
+    <!--<head>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+</head>-->
+    <!--<body>
+</body>-->
+    </body>
+</html>
